@@ -1,0 +1,31 @@
+// Calculating the perimeter, total area and volume of a cuboid.
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        double length, breadth, height;
+        double front_back, top_bottom, left_right;
+        double perimeter, total_area, volume;
+
+        System.out.println("Enter the length, breadth and height: ");
+        length= sc.nextDouble();
+        breadth= sc.nextDouble();
+        height= sc.nextDouble();
+
+        front_back= length * height;
+        top_bottom= length * breadth;
+        left_right= breadth * height;
+
+        perimeter= 2*(length+breadth);
+        total_area= (2*front_back) + (2*top_bottom) + (2*left_right);
+        volume= length*breadth*height;
+
+        System.out.println("The perimeter is: "+perimeter);
+        System.out.println("The total area is: "+total_area);
+        System.out.println("The volume is: "+volume);
+        
+    }
+}
