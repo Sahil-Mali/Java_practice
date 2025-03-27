@@ -20,7 +20,7 @@ class Practice{
         left_right= breadth * height;
 
         perimeter= 2*(length+breadth);
-        total_area= (2*front_back) + (2*top_bottom) + (2*left_right);
+        total_area= 2*(front_back + top_bottom + left_right);
         volume= length*breadth*height;
 
         System.out.println("The perimeter is: "+perimeter);
