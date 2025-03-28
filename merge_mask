@@ -1,0 +1,16 @@
+//Storing two small numbers in one byte(8 bits) using merging and then retrieving them using masking.
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice{
+    public static void main(String args[]){
+        byte x=9, y=10, z;
+        z=(byte)(x<<4);                               //Merging
+        z=(byte)(z|y);
+
+        System.out.println((z&0b11110000)>>4);        //Masking
+        System.out.println((z&0b00001111));
+
+    }
+}
