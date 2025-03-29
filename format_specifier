@@ -1,0 +1,26 @@
+//Various examples of format specifiers using argument index, flags, width and conversion
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice{
+    public static void main(String args[]){
+        int a=10;
+        float b=123.45f;
+        char c='A';
+        String str="hello";
+
+        System.out.printf("%d %f %c %s\n", a,b,c,str);         //types of conversion
+        System.out.printf("%o %e %c %s\n", a,b,c,str);
+        System.out.printf("%x %g %c %s\n", a,b,c,str);
+
+        System.out.printf("%2$f %3$c %1$d\n", a,b,c);          //argument index
+
+        System.out.printf("%10d %6.2f %5c\n", a,b,c);          //width.precision
+
+        System.out.printf("%010d %f\n", a,b);                  //types of flags
+        System.out.printf("%-10d %f\n", a,b);
+        System.out.printf("%+10d %f\n", a,b);
+        System.out.printf("%(10d %f\n", a,b);
+    }
+}
