@@ -1,0 +1,30 @@
+//String Methods Part 2
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice{
+    public static void main(String args[]){
+        String str= "Mr. Sahil Mali";
+        System.out.println(str);
+
+        boolean str1= str.startsWith("Mr");
+        System.out.println(str1);
+
+        boolean str2= str.endsWith("com");
+        System.out.println(str2);
+
+        char a= str.charAt(7);
+        System.out.println(a);
+
+        int i= str.indexOf("a");
+        System.out.println(i);
+        int j= str.indexOf("a",7);
+        System.out.println(j);
+
+        int k= str.lastIndexOf("i");
+        System.out.println(k);
+        int l= str.lastIndexOf("i",11);
+        System.out.println(l);
+    }
+}
