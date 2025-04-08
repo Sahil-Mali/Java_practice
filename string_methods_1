@@ -1,0 +1,32 @@
+//String methods Part 1
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice{
+    public static void main(String args[]){
+        String str= new String("  IntelliJ idea");
+        System.out.println(str);
+
+        int l= str.length();
+        System.out.println(l);
+
+        String str1= str.toUpperCase();
+        System.out.println(str1);
+
+        String str2= str.toLowerCase();
+        System.out.println(str2);
+
+        String str3= str.trim();
+        System.out.println(str3);
+
+        String str4= str.substring(4);
+        System.out.println(str4);
+
+        String str5= str.substring(4,13);
+        System.out.println(str5);
+
+        String str6= str.replace('i','k');
+        System.out.println(str6);
+    }
+}
