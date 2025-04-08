@@ -1,0 +1,23 @@
+//String Methods Part 3
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice{
+    public static void main(String args[]){
+            String str= "Java";
+            String str1= "java";
+            String str2= "python";
+            String str3= new String("java");
+
+            System.out.println(str.equals(str1));
+            System.out.println(str.equalsIgnoreCase(str1));
+
+            System.out.println(str1.equals(str3));
+            System.out.println(str1==str3);
+
+            System.out.println(str.compareTo(str1));
+            System.out.println(str1.compareTo(str));
+            System.out.println(str1.compareTo(str2));
+    }
+}
