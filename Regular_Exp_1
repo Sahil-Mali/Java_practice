@@ -1,0 +1,21 @@
+//Checking if given number is binary or not.
+//Checking if given number is hexadecimal or not.
+//Checkin if given string is in date format: dd/mm/yyyy.
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice{
+    public static void main(String args[]){
+            int b= 10001110;
+            long h= 0x8278AB;
+            String date= "11/04/2025";
+            String str= b + "";
+            System.out.println(str.matches("[01]+"));
+
+            String str1= h + "";
+            System.out.println(str1.matches("[0-9A-F]+"));
+
+            System.out.println(date.matches("[0-3][1-9]/[01][1-9]/[0-9]{4}"));
+    }
+}
