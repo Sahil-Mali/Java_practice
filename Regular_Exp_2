@@ -1,0 +1,22 @@
+//Removing special characters.
+//Removing extra spaces.
+//Counting words in string.
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice{
+    public static void main(String args[]){
+            String str= "a!B@c#1%2^3&";
+            String str1= str.replaceAll("[^a-zA-Z0-9]","");
+            System.out.println("The string without special characters is: " + str1);
+
+            String str2= "    abc   hdg  uye     cbkrw   ";
+            String str3= str2.replaceAll("[\s]+"," ").trim();
+            System.out.println("The string without extra spaces is: " + str3);
+
+            String word[]= str3.split("\s");
+            System.out.println("The no. of words in above string is: " + word.length);
+            
+    }
+}
