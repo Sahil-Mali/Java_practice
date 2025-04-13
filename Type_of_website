@@ -1,0 +1,47 @@
+//Finding the type of website like commercial, organization, etc from its url.
+//Also finding the protocol used.
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice {
+    public static void main(String args[]){
+        String url= "https//www.google.com";
+        int dot= url.lastIndexOf(".");
+        String domain= url.substring(dot+1,url.length());
+
+        System.out.print("The protocol used is: ");
+        if(url.startsWith("https")){
+            System.out.println("Secure Hypertext transfer protocol");
+        }
+        else if(url.startsWith("http")){
+            System.out.println("Hypertext transfer protocol");
+        }
+        else if(url.startsWith("ftp")){
+            System.out.println("File Transfer Protocol");
+        }
+        else{
+            System.out.println("Invalid protocol or Protocol not found");
+        }
+
+        System.out.print("The type of website is: ");
+        if(domain.startsWith("com")){
+            System.out.println("Commercial");
+        }
+        else if(domain.startsWith("gov")){
+            System.out.println("Government");
+        }
+        else if(domain.startsWith("org")){
+            System.out.println("Organization");
+        }
+        else if(domain.startsWith("net")){
+            System.out.println("Network");
+        }
+        else if(domain.startsWith("mil")){
+            System.out.println("Military");
+        }
+        else {
+            System.out.println("!!!Invalid");
+        }
+    }
+}
