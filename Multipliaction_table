@@ -1,0 +1,18 @@
+//Generating multiplication table of a given number.
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice {
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n,i;
+        System.out.println("Enter the number: ");
+        n=sc.nextInt();
+
+        for(i=1;i<=10;i++){
+            System.out.println(n+"x"+i+"="+n*i);
+        }
+
+    }
+}
