@@ -1,0 +1,54 @@
+// 1) Armstrong no.
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice {
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n,no,i,r,rev=0;
+
+        System.out.println("Enter the number: ");
+        n=sc.nextInt();
+        no=n;
+
+        while(n>0){
+            r=n%10;
+            rev= rev * 10 + r;
+            n=n/10;
+        }
+        if(no==rev){
+            System.out.println("It is a palindrome.");
+        }
+        else{
+            System.out.println("It is not a palindrome.");
+        }
+    }
+}
+
+
+
+
+
+
+// 2)counting the digits in a number.
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice {
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n,i,r;
+
+        System.out.println("Enter the number: ");
+        n=sc.nextInt();
+
+        while(n>0){
+            r=n%10;
+            n=n/10;
+            System.out.print(r);
+        }
+    }
+}
+
