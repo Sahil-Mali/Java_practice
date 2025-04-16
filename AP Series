@@ -1,0 +1,23 @@
+//Generating Arithmetic Series by starting number, difference upto 'n' no.
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice {
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int a,d,n;
+
+        System.out.println("Program for AP Series.");
+        System.out.println("Enter a,d and n: ");
+        a= sc.nextInt();
+        d= sc.nextInt();
+        n= sc.nextInt();
+
+        int term=a;
+        for(int i=0;i<n;i++){
+            System.out.print(term + ", ");
+            term=term + d;
+        }
+    }
+}
