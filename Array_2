@@ -1,0 +1,73 @@
+//Operations on Array Part-2
+
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice {
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int A[] = {3,6,17,8,9,4,13,2,1};
+        int temp=A[0];
+        int temp1=A[A.length-1];
+
+        //Left Rotation
+        for (int i=0;i< A.length-1;i++){
+            A[i]=A[i+1];
+        }
+        A[A.length-1]=temp;
+
+        for (int i=0;i< A.length;i++){
+            System.out.print(A[i]+", ");
+        }
+
+
+        //Right Rotation
+        for (int i=A.length-1;i>0;i--){
+            A[i]=A[i-1];
+        }
+        A[0]=temp1;
+
+        for (int i=0;i< A.length;i++){
+            System.out.print(A[i]+", ");
+        }
+
+
+        //Inserting an element
+        int B[]= new int[10];
+        B[0]=3;B[1]=6;B[2]=7;B[3]=15;B[4]=18;
+        int a,ind1;
+        System.out.println("Enter the element and index: ");
+        a=sc.nextInt();
+        ind1=sc.nextInt();
+
+        for (int i=B.length-1;i>ind1;i--){
+            B[i]=B[i-1];
+        }
+        B[ind1]=a;
+
+        for (int i=0;i<B.length;i++){
+            System.out.print(B[i]+", ");
+        }
+
+
+        //Deleting an element
+        System.out.println("Enter the index to be deleted: ");
+        int b= sc.nextInt();
+
+        for (int i=0;i<B.length;i++){
+            System.out.print(B[i]+", ");
+        }
+        System.out.println("");
+
+        for (int i=b+1;i<B.length;i++){
+            B[i-1]=B[i];
+        }
+
+
+        for (int i=0;i<B.length;i++){
+            System.out.print(B[i]+", ");
+        }
+
+    }
+}
