@@ -1,0 +1,63 @@
+Finding if a number is prime or not.
+Finding GCD of two numbers.
+Finding max element in an array
+
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice {
+    static boolean isPrime(int x){               //isPrime method
+        for (int i=2;i<=x/2;i++){
+            if (x%i==0)
+                return false;
+        }
+        return true;
+    }
+
+    
+    static void gcd(int x,int y){                 //GCD method
+        int m=0;
+        while(x!=y){
+            if(x>y){
+                x-=y;
+            }
+            else if(y>x){
+                y-=x;
+            }
+            m=x;
+        }
+        System.out.println("GCD is: "+m);
+    }
+
+
+    static int max(int A[]){                       //Max method
+        int max_n=0;
+        for(int i=0;i<A.length-1;i++){
+            if(A[i]<A[i+1]){
+                max_n=A[i+1];
+            }
+        }
+        return max_n;
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter a no: ");
+        int a= sc.nextInt();
+        if (isPrime(a)==true){
+            System.out.println("No is Prime.");
+        }
+        else{
+            System.out.println("No is not prime.");
+        }
+
+
+        int b=15,c=7;
+        gcd(b,c);
+
+
+        int A[]= {4,8,16,23,78,34,9};
+        System.out.println(max(A));
+        
+    }
+}
