@@ -1,0 +1,25 @@
+//Practising variable arguments (varargs).
+//It helps in passing any no. of arguments in a method.
+
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice {
+    static void A(int ...x){
+        for(int a:x){
+            System.out.println(a);
+        }
+    }
+
+    static void Show(String ...s){
+        for(int i=0;i<s.length;i++){
+            System.out.println(i+1+"."+s[i]);
+        }
+    }
+
+    public static void main(String args[]){
+        A(10,20,30,40,50);
+        Show("sahil","suresh","om","parth","omkar");
+    }
+}
