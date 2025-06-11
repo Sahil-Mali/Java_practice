@@ -1,0 +1,28 @@
+Overloading the method with same method name and different parameters.
+
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Practice {
+    static int area(int a,int b){
+        int d=a*b;
+        return d;
+    }
+
+    static int area(int r){
+        int c = Math.PI*r*r;
+        return c;
+    }
+
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the length: ");
+        int l =sc.nextInt();
+        System.out.println("Enter the breadth: ");
+        int b =sc.nextInt();
+
+        int Area = area(l,b);
+        System.out.println("The area is: "+Area);
+    }
+}
